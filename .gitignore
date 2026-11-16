@@ -1,0 +1,39 @@
+# Dependencies and generated build/test output
+**/node_modules/
+**/dist/
+coverage/
+playwright-report/
+test-results/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local environment files and secrets (keep only safe templates)
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!*.env.example
+!**/.env.example
+!**/*.env.example
+*.pem
+*.key
+*credentials*.json
+*service-account*.json
+
+# Databases, uploaded/user content, backups, and runtime state
+.runtime/
+.data/
+data/
+uploads/
+**/uploads/
+backups/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.bak
+*.backup
+*.dump
